@@ -1,0 +1,10 @@
+.DS_Store
+__pycache__/
+build/
+# regenerable disassembly / call graphs / image copies (see NOTES.md §2)
+work/*.pkl
+work/*.txt
+work/*.bin
+workA/*.pkl
+workA/*.txt
+workA/*.bin
