@@ -4,8 +4,21 @@ Custom firmware patches for the **Nikon D3** (firmware 2.03), aimed at shooting 
 The headline feature is **trap focus**: hold the shutter release and the camera fires only once the
 viewfinder focus dot (●) lights.
 
-> **Use at your own risk.** This is unofficial, reverse-engineered firmware. It is not affiliated with or
-> endorsed by Nikon. Flashing any firmware can brick a camera. Read the whole README before you flash.
+> [!WARNING]
+> **Disclaimer: use at your own risk. This could brick your camera.**
+>
+> - This is unofficial, reverse-engineered firmware. It is not affiliated with, endorsed by or supported
+>   by Nikon. Flashing modified firmware may void any remaining warranty or service support.
+> - A bad flash, a power loss during an update, or a bug in a patch **can leave your camera unusable**.
+>   The authors take no responsibility for any damage, data loss or bricked cameras. You flash this
+>   entirely at your own risk.
+> - The original Nikon firmware is provided in [`D3Update/`](D3Update/) so you can go back to stock.
+>   **Reverting only works while the camera can still start up and run the firmware updater from the
+>   Setup menu.** If a flash fails badly enough that the camera won't boot, these files can't save it.
+>   It would need a repair service.
+> - The software is provided "as is", with no warranty of any kind.
+>
+> Read the whole README before you flash.
 
 ## Downloads
 
