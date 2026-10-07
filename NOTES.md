@@ -175,7 +175,7 @@
 - Current flashable trap-focus build: `python3 tools/patch_a.py D3Update/AD3_0203.bin build/AD3_0203.bin --trap-focus --version 2.05` → SHA `fbc65b6d…`, CRC 0x3d8e. It is identical to the confirmed 2.06 build apart from the version byte; the user asked for 2.05.
 - **2026-10-07: the A 2.05 trap-focus build (SHA fbc65b6d…) is flashed and confirmed working. The camera runs it with the stock B 2.03.**
 
-## 10. ISO range limit (investigation, 2026-10-07, in progress, nothing built)
+## 10. ISO range limit (investigation, 2026-10-07): DROPPED by the user, nothing built. Kept for reference only.
 - Goal: remove Lo 1 / Lo 0.x, 6400 and Hi 0.3-Hi 2 so the manual ISO range is 200-3200 (or 200-5000).
 - **Main (B) ISO setting = byte `0x871b064f`** (item 7 byte 3, main → sub). Units are 1/12 EV: Lo 1 = 60, 200 = 72, 3200 = 120, 6400 = 132, Hi 1 = 144, Hi 2 = 156. The ISO step (b1) is `0x871b067b` bits 7:6: 0 = 1/3, 1 = 1/2, 2 = 1 EV.
   - Value → list index: `0x1d7329[(v)/4]` (1/3), `0x1d72fe[v/6]` (1/2), `0x1d72e8[v/12]` (1 EV).

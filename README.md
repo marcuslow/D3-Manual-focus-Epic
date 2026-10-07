@@ -108,7 +108,6 @@ Both builds are reproducible: the output should match the SHA-256 values above.
 
 ## Work in progress
 
-- ISO range limit, for example 200-3200 only, with Lo/Hi and 6400 removed. See NOTES.md §10.
 - Custom colour profiles. The Picture Control colour table isn't decoded yet.
 
 ## Credits and legal
